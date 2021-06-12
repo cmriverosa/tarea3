@@ -61,7 +61,7 @@ const FormClubes = () => {
     const handlerEdit = (data:any) =>{
         
         const {id,equipo,categoria,logo} = data
-        
+                
         setEquipo(equipo)
         setCategoria(categoria)
         setLogo(logo)

@@ -36,7 +36,7 @@ const ListClubes = (props:any) => {
                             <td>
                                 <div className="d-inline-flex">
                                     <div><FontAwesomeIcon icon={faPen} size="lg" type="button" color="#dddd00" onClick={()=>handlerClickEdit(index)} title="Editar" /></div>
-                                    <div className="ms-2"><FontAwesomeIcon icon={faMinusCircle} size="lg" type="button" color="red" onClick={()=>handlerClickDelete(index)} title="Eliminar"/></div>
+                                    <div className="ms-2"><FontAwesomeIcon icon={faMinusCircle} size="lg" type="button" color="red" onClick={()=>handlerClickDelete(clubes.id)} title="Eliminar"/></div>
                                 </div>
                             </td>
                         </tr>
