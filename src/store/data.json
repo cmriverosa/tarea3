@@ -1,0 +1,30 @@
+[
+    {
+        
+        "id": 0,
+        "equipo": "Universidad de Chile",
+        "categoria": "Primera división",
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/2/2d/Emblema_del_Club_Universidad_de_Chile.png"
+    },
+    {
+        
+        "id": 1,
+        "equipo": "Universidad Catolica",
+        "categoria": "Primera división",
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo_Club_Deportivo_Universidad_Cat%C3%B3lica.svg/1200px-Escudo_Club_Deportivo_Universidad_Cat%C3%B3lica.svg.png"
+    },
+    {
+        
+        "id": 2,
+        "equipo": "Audax Italiano",
+        "categoria": "Primera división",
+        "logo" : "https://www.audaxitaliano.cl/assets/uploads/2020/07/audax-italiano_512.png"
+    },
+    {
+        
+        "id": 3,
+        "equipo": "Ñublense",
+        "categoria": "Primera división",
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/9/9f/%C3%91ublense.png"
+    }
+]

@@ -1,0 +1,16 @@
+.bgFooter{
+    background-color: black;
+    position: relative;    
+    width: 100%;    
+}
+.texto{
+    color: aliceblue;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+@media (min-width:720px)  {
+    .bgFooter{
+        position:fixed; 
+        bottom:0;
+    }
+}
