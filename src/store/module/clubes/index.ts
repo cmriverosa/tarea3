@@ -19,8 +19,7 @@ const clubesReducer  = (prevState : any = initialState, action:any) =>{
             }
         case 'CLUBES_GET_DATA':
                                 
-            const dataFound = [...prevState.clubes].find((search: any) => search.id === action.payload)
-            console.log(dataFound)
+            const dataFound = [...prevState.clubes].find((search: any) => search.id === action.payload)            
             return{
                 team: dataFound
             }   

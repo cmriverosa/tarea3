@@ -49,15 +49,19 @@ const FormClubes = () => {
                 equipo:equipo,
                 categoria: categoria,
                 logo: logo
-            }
-            // console.log(club)
+            }            
             dispatch(addClubAction(club))
+            setEquipo('')
+            setCategoria('')
+            setLogo('')            
+            setModoEdicion(false)
         }
         
     }
     const handlerEdit = (data:any) =>{
         
-        const {id,equipo,categoria,logo} = data        
+        const {id,equipo,categoria,logo} = data
+        
         setEquipo(equipo)
         setCategoria(categoria)
         setLogo(logo)

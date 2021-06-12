@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinusCircle, faPen } from '@fortawesome/free-solid-svg-icons'
 import { useSelector,useDispatch } from 'react-redux'
 import { clubesSelector } from '../../store/module/clubes/selectors'
-import { deleteClubAction, getClubAction } from '../../store/module/clubes/actions'
+import { deleteClubAction } from '../../store/module/clubes/actions'
 
 const ListClubes = (props:any) => {
     const {handlerEdit} = props
     const clubes = useSelector(clubesSelector)
     const dispatch = useDispatch()
     
-    const handlerClickEdit = (id:number) =>{
-        handlerEdit(clubes.clubes[id])               
+    const handlerClickEdit = (id:number) =>{                
+        handlerEdit(clubes.clubes[id])        
     }
 
     const handlerClickDelete = (id:number) =>{             
@@ -29,14 +29,14 @@ const ListClubes = (props:any) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {clubes.clubes.map((clubes:any) => (
-                        <tr key={clubes.id}>
+                    {clubes.clubes.map((clubes:any, index:number) => (
+                        <tr key={index}>
                             <td>{clubes.equipo}</td>
                             <td>{clubes.categoria}</td>
                             <td>
                                 <div className="d-inline-flex">
-                                    <div><FontAwesomeIcon icon={faPen} size="lg" type="button" color="#dddd00" onClick={()=>handlerClickEdit(clubes.id)} title="Editar" /></div>
-                                    <div className="ms-2"><FontAwesomeIcon icon={faMinusCircle} size="lg" type="button" color="red" onClick={()=>handlerClickDelete(clubes.id)} title="Eliminar"/></div>
+                                    <div><FontAwesomeIcon icon={faPen} size="lg" type="button" color="#dddd00" onClick={()=>handlerClickEdit(index)} title="Editar" /></div>
+                                    <div className="ms-2"><FontAwesomeIcon icon={faMinusCircle} size="lg" type="button" color="red" onClick={()=>handlerClickDelete(index)} title="Eliminar"/></div>
                                 </div>
                             </td>
                         </tr>
